@@ -1,5 +1,3 @@
-//Creado que furnciones login 
-
 import React, { useRef } from 'react';
 import '@styles/Login.scss';
 import logo from '@logos/logo_yard_sale.svg'
@@ -8,7 +6,7 @@ const Login = () => {
 	const form = useRef(null);
 
 	const handleSubmit = (event) => {
-		event.preventDefault(); // Para que no mande usuario y la contraseña por la url
+		event.preventDefault();
 		const formData = new FormData(form.current);
 		const data = {
 			usename: formData.get('email'),
