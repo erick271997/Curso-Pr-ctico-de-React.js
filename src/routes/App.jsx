@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom'; // esto se debe instal 
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Layout from '@containers/Layout';
 import Home from '@pages/Home';
 import Login from '@pages/Login';
@@ -22,7 +22,7 @@ const App = () => {
 			<BrowserRouter>
 				<Layout>
 					<Switch>
-						<Route exact path="/" component={Home} /> {/* estos es para divir la pagina ejem poner Login luego de / y te lleva a login  */}
+						<Route exact path="/" component={Home} />
 						<Route exact path="/login" component={Login} />
 						<Route exact path="/password-recovery" component={PasswordRecovery} />
 						<Route exact path="/send-email" component={SendEmail} />

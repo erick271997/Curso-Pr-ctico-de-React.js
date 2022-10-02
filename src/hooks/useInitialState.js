@@ -1,5 +1,3 @@
-// para el carrito  useit
-
 import { useState } from "react";
 
 const initialState = {
